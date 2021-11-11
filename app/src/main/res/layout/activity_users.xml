@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:fontFamily="@font/gilroy_bold"
+            android:text="Baate"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="0.5"
+            android:padding="5dp"
+            android:src="@drawable/profile_image" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/top_curve"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:id="@+id/internet"
+        android:adjustViewBounds="true"
+        android:src="@drawable/nowifi"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/userRecyclerView"
+        app:layout_constraintEnd_toEndOf="@+id/userRecyclerView"
+        app:layout_constraintStart_toStartOf="@+id/userRecyclerView"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

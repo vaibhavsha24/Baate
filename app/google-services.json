@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "7056533490",
+    "firebase_url": "https://mychat-89c19.firebaseio.com",
+    "project_id": "mychat-89c19",
+    "storage_bucket": "mychat-89c19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7056533490:android:6cbf7d45ff6c18146c6d6b",
+        "android_client_info": {
+          "package_name": "com.linq.baate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7056533490-83o8ot1ebaenj0eudusbknm681qaen6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApdlv9cUNK__6CJOMBuIGyL9NF6hRDuwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7056533490-83o8ot1ebaenj0eudusbknm681qaen6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
